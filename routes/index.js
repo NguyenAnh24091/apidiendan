@@ -49,7 +49,7 @@ async function getAllTokens() {
 }
 
 // Lập lịch gửi thông báo vào thời điểm cụ thể 
-schedule.scheduleJob('42 16 * * *', async function() {
+schedule.scheduleJob('45 16 * * *', async function() {
   // Lấy danh sách tất cả các token
   const tokens = await getAllTokens();
   // Gọi hàm gửi thông báo với danh sách tokens đã lấy được
